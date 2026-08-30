@@ -4,12 +4,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-html, body {
-  height: 100%;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
 body {
   background: #f2f2f2;
   margin: 0;
