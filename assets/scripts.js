@@ -18,7 +18,7 @@ function generateSoal() {
   soalInput.value = soal;
   jawabanInput.value = '';
   hasilBox.innerHTML = '';
-  jawabanInput.focus();
+  //jawabanInput.focus();
 }
 
 // Fungsi ubah angka ke romaji dengan pelafalan khusus
