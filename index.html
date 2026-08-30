@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Latihan Bahasa Jepang</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Latihan Bahasa Jepang</h1>
+    </header>
+
+    <main>
+      <div class="tabs">
+        <button class="tab" data-tab="hiragana">Hiragana</button>
+        <button class="tab" data-tab="katakana">Katakana</button>
+        <button class="tab active" data-tab="angka">Angka</button>
+        <button class="tab" data-tab="kanji">Kanji</button>
+      </div>
+
+      <div class="content-box">
+        <div class="tab-content active" id="angka">
+          <div class="grid-2">
+            <div class="card soal-card">
+              <div class="row">
+                <label>Soal</label>
+                <input type="number" id="soal" inputmode="numeric" placeholder="Isi manual di mode Kreatif">
+              </div>
+              <div class="row">
+                <label>Jawaban</label>
+                <input type="text" id="jawaban" placeholder="contoh: ni hyaku">
+              </div>
+              <div class="row buttons">
+                <button id="kirim">Kirim</button>
+                <button id="ulang">Ulang</button>
+              </div>
+              <div class="row hasil-row">
+                <label>Hasil</label>
+                <div id="hasil" class="hasil-box"></div>
+              </div>
+            </div>
+
+            <div class="card setting-card">
+              <fieldset>
+                <legend>Mode</legend>
+                <label><input type="radio" name="mode" value="otomatis" checked> Otomatis</label>
+                <label><input type="radio" name="mode" value="kreatif"> Kreatif</label>
+              </fieldset>
+
+              <fieldset>
+                <legend>Digit</legend>
+                <div class="digit-grid">
+                  <label><input type="radio" name="digit" value="1" checked> Satuan</label>
+                  <label><input type="radio" name="digit" value="10"> Puluhan</label>
+                  <label><input type="radio" name="digit" value="100"> Ratusan</label>
+                  <label><input type="radio" name="digit" value="1000"> Ribuan</label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="hiragana"><p>Konten Hiragana coming soon</p></div>
+        <div class="tab-content" id="katakana"><p>Konten Katakana coming soon</p></div>
+        <div class="tab-content" id="kanji"><p>Konten Kanji coming soon</p></div>
+      </div>
+    </main>
+  </div>
+  <script src="assets/scripts.js"></script>
+</body>
+</html>
